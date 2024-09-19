@@ -1,12 +1,17 @@
 
 import './App.css'
-
+import { Card } from './Components/Card'
+import { store } from './Components/Store'
+import { Provider } from 'react-redux'
 function App() {
 
   return (
     <>
-      <h1>SRIRAM GOKUL</h1>
-    </>
+    <Provider store={store}>
+    <Card  />
+    </Provider>
+
+       </>
   )
 }
 
